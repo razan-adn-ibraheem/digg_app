@@ -1,0 +1,132 @@
+.step_one {
+  overflow: hidden;
+  background-image: url("/static/images/mob_home.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  @media (min-width: 768px) {
+    overflow: hidden;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  @media (min-width: 991px) {
+    overflow: hidden;
+    background-image: url("/static/images/home.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .logo {
+    font-family: "IBMPlex-Bold";
+    color: $white;
+    font-size: 62px;
+    margin-bottom: 30px;
+  }
+  .left {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 50px 80px 50px 50px;
+    @media (min-width: 992px) {
+      width: (100% / 2);
+      float: left;
+    }
+    @media (max-width: 991px) {
+      overflow: hidden;
+      background-image: url("/static/images/home_.png");
+      background-repeat: no-repeat;
+      background-size: 125% 100%;
+    }
+    @media (max-width: 768px) {
+      overflow: hidden;
+      background-image: none;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      display: none;
+    }
+
+    q {
+      font-family: "sora-light";
+      font-size: 14px;
+      color: $white;
+      line-height: 2;
+      margin-bottom: 25px;
+    }
+    h3 {
+      font-size: 18px;
+      font-family: "sora-semiBoldt";
+      color: $white;
+      margin: 0 0 5px 0;
+    }
+    .home_img {
+      height: 320px;
+      width: 400px;
+      margin-bottom: 30px;
+      position: relative;
+      @media (max-width: 991px) {
+        text-align: center;
+      }
+
+      .shape_img,
+      .man_img,
+      .top_img {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        width: fit-content;
+      }
+      .shape_img {
+        z-index: 1;
+        width: 100%;
+      }
+      .top_img {
+        z-index: 3;
+        top: -69px;
+        left: 82px;
+        width: 100%;
+        display: none;
+      }
+      .man_img {
+        z-index: 2;
+        width: 100%;
+      }
+    }
+  }
+  .right {
+    .title_sm {
+      font-weight: bold;
+      font-size: 3rem;
+      font-family: "IBMPlex-Bold";
+      margin-bottom: 30px;
+      color: $darkGray;
+      display: none;
+      @media (max-width: 767px) {
+        display: block;
+      }
+    }
+    .title_2 {
+      font-family: "sora-regular";
+      font-size: 1.5rem;
+      color: $darkGray;
+      text-align: center;
+      margin-bottom: 30px;
+      @media (max-width: 767px) {
+        text-align: left;
+      }
+    }
+    @media (min-width: 992px) {
+      width: (100% / 2);
+      float: left;
+    }
+    .gender {
+      margin-bottom: 5px;
+    }
+  }
+  .main_btn {
+    float: right;
+    @media (max-width: 767px) {
+      float: none;
+      padding: 15px 45px !important;
+    }
+  }
+}

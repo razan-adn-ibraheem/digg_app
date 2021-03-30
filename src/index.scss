@@ -1,0 +1,31 @@
+/*====================================
+|||||||||||| Add fonts||||||||||||||||
+=====================================*/
+@font-face {
+  font-family: "sora-regular";
+  src: url("/static/fonts/Sora-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "sora-light";
+  src: url("/static/fonts/Sora-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "sora-semiBoldt";
+  src: url("/static/fonts/Sora-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBMPlex-Bold";
+  src: url("/static/fonts/IBMPlexSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IBMPlexSans";
+  src: url("/static/fonts/IBMPlexSans-Bold.ttf") format("truetype");
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
