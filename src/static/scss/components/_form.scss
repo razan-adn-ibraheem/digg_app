@@ -1,0 +1,111 @@
+.ant-form-item {
+  position: relative !important;
+  .ant-select {
+    height: 60px !important;
+    width: 100% !important;
+  }
+  .ant-form-item-label {
+    position: absolute !important;
+    height: 100% !important;
+    z-index: 2;
+    & > label {
+      height: 100% !important;
+      margin-bottom: 0 !important;
+    }
+  }
+  .ant-form-item-control-input {
+    height: 100% !important;
+    .ant-form-item-control-input-content {
+      position: relative;
+      height: 100% !important;
+      .ant-select-selector {
+        height: 60px !important;
+        width: 100%;
+        background-color: $gray !important;
+        display: flex !important;
+        align-items: center !important;
+        .ant-select-selection-item {
+          display: flex;
+          align-items: center;
+        }
+        input {
+          display: flex !important;
+          align-items: center !important;
+          height: 60px !important;
+          width: 100%;
+        }
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="num"],
+      .ant-picker {
+        width: 100% !important;
+        height: 60px !important;
+        padding: 0 12px !important;
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+        color: $darkGray !important;
+        background-color: $gray !important;
+        border: none !important;
+        border-radius: 5px !important;
+        box-shadow: none !important;
+        outline: none !important;
+      }
+    }
+  }
+}
+
+.ant-input-affix-wrapper {
+  padding: 0 !important;
+  border-radius: 0 !important;
+  border: none !important;
+  transition: all 0.2s linear;
+  .ant-input-suffix {
+    position: absolute !important;
+    top: 22px !important;
+    left: 8px !important;
+    transition: all 0.2s linear;
+  }
+}
+
+.ant-input {
+  outline: none !important;
+  transition: all 0.2s linear;
+  &:focus {
+    outline: none !important;
+  }
+  &:hover {
+    outline: none !important;
+  }
+  &:focus + .ant-input-suffix,
+  &:not(:placeholder-shown) + .ant-input-suffix {
+    outline: none;
+    transition: all 0.2s linear;
+    .floating-label {
+      font-size: 14px;
+      transform: translatey(-90%);
+      top: 20px;
+      color: $blue;
+      transition: all 0.2s linear;
+    }
+  }
+}
+
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+  border-color: transparent !important;
+  box-shadow: transparent !important;
+}
+
+.ant-input-affix-wrapper .ant-input:focus {
+  border: none;
+  border-bottom: 1px solid white !important;
+  box-shadow: none;
+}
+
+.ant-select-selection-placeholder {
+  color: $lightGray !important;
+}
+
+.ant-picker-input input::placeholder {
+  color: $lightGray !important;
+}

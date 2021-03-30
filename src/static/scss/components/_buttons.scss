@@ -14,3 +14,37 @@
   ) !important;
   transition: all 0.5s linear !important;
 }
+
+.ant-radio {
+  height: 30px !important;
+  width: 30px !important;
+  background-color: $gray !important;
+}
+.ant-radio-checked .ant-radio-inner {
+  border-color: transparent !important;
+  background-image: linear-gradient(to right, $startGradient, $endGradient);
+  background-color: transparent !important;
+}
+.ant-radio-inner::after {
+  content: "";
+  display: block;
+  background: url("../../images/icons/checked.png") no-repeat;
+  width: 100% !important;
+  height: 100% !important;
+  float: left;
+  margin: 0 6px 0 0;
+  background-color: transparent !important;
+  top: 10px !important;
+  left: 7px !important;
+}
+
+.ant-radio-wrapper {
+  justify-content: center !important;
+  align-items: center !important;
+  .ant-radio-inner {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: $gray !important;
+    border-radius: 0 !important;
+  }
+}
