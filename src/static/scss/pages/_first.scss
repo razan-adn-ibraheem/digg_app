@@ -93,6 +93,7 @@
     }
   }
   .right {
+    padding: 50px;
     .title_sm {
       font-weight: bold;
       font-size: 3rem;
@@ -113,6 +114,12 @@
       @media (max-width: 767px) {
         text-align: left;
       }
+    }
+    .q {
+      font-family: "sora-regular";
+      font-size: 1.2rem;
+      color: $darkGray;
+      margin-bottom: 15px;
     }
     @media (min-width: 992px) {
       width: (100% / 2);
