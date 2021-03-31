@@ -73,8 +73,84 @@ class StepsForm extends Component {
             })
         }
 
+        getStepTwoValues = (values) => {
+            const { step_two_fields } = this.state;
+            this.setState({
+                step_two_fields: {
+                    ...step_two_fields,
+                    ...values
+                    }
+                })
+            }
+            getStepThreeValues = (values) => {
+                const { step_three_fields } = this.state;
+                this.setState({
+                    step_three_fields: {
+                        ...step_three_fields,
+                        ...values
+                        }
+                    })
+                }
+    
+                getStepFourValues = (values) => {
+                    const { step_four_fields } = this.state;
+                    this.setState({
+                        step_four_fields: {
+                            ...step_four_fields,
+                            ...values
+                            }
+                        })
+                    }
+                    getStepFiveValues = (values) => {
+                        const { step_five_fields } = this.state;
+                        this.setState({
+                            step_five_fields: {
+                                ...step_five_fields,
+                                ...values
+                                }
+                            })
+                        }
 
+                        getStepSixValues = (values) => {
+                            const { step_six_fields } = this.state;
+                            this.setState({
+                                step_six_fields: {
+                                    ...step_six_fields,
+                                    ...values
+                                    }
+                                })
+                            }
 
+                            getStepSevenValues = (values) => {
+                                const { step_seven_fields } = this.state;
+                                this.setState({
+                                    step_seven_fields: {
+                                        ...step_seven_fields,
+                                        ...values
+                                        }
+                                    })
+                                }
+
+                                getStepEightValues = (values) => {
+                                    const { step_eight_fields } = this.state;
+                                    this.setState({
+                                        step_eight_fields: {
+                                            ...step_eight_fields,
+                                            ...values
+                                            }
+                                        })
+                                    }
+
+                                    
+                                getStepFinalValues = (values) => {
+                                    const { step_nine_fields } = this.state;
+                                    this.setState({
+                                        step_nine_fields: {
+                                            ...step_nine_fields,
+                                            ...values
+                                            }
+                                        })
+                                    }
     render() {
         const { step, step_one_fields, step_two_fields,
             step_three_fields, step_four_fields, step_five_fields,
@@ -85,7 +161,66 @@ class StepsForm extends Component {
                 <First {...step_one_fields} handelNextBtn={this.handelNextBtn} submittedValues={this.getStepOneValues}/>
               )
             }
+            else if(step === 2) {
+                return (
+                        <Second {...step_two_fields} handelNextBtn={this.handelNextBtn} handelBackBtn={this.handelBackBtn} submittedValues={this.getStepTwoValues} />
+                   
+                );
+            }
+            else if(step === 3) {
+                return (
+                        <Third {...step_three_fields} handelNextBtn={this.handelNextBtn} handelBackBtn={this.handelBackBtn} submittedValues={this.getStepThreeValues} />
+                   
+                );
+            }
      
+            else if(step === 4) {
+                return (
+                        <Fourth {...step_four_fields} handelNextBtn={this.handelNextBtn} handelBackBtn={this.handelBackBtn} submittedValues={this.getStepFourValues} />
+                   
+                );
+            }
+            
+            else if(step === 5 ){
+                return (
+                        <Fifth {...step_five_fields} handelNextBtn={this.handelNextBtn} handelBackBtn={this.handelBackBtn} submittedValues={this.getStepFiveValues} />
+                   
+                );
+            }
+            else if(step === 6 ){
+                return (
+                        <Sixth {...step_six_fields} handelNextBtn={this.handelNextBtn} handelBackBtn={this.handelBackBtn} submittedValues={this.getStepSixValues} />
+                   
+                );
+            }
+            else if(step === 7 ){
+                return (
+                        <Seventh {...step_seven_fields} handelNextBtn={this.handelNextBtn} handelBackBtn={this.handelBackBtn} submittedValues={this.getStepSevenValues} />
+                   
+                );
+            }
+
+            else if(step === 8 ){
+                return (
+                        <Eighth {...step_eight_fields} handelNextBtn={this.handelNextBtn} handelBackBtn={this.handelBackBtn} submittedValues={this.getStepEightValues} />
+                   
+                );
+            }
+
+            else if(step === 9 ){
+                return (
+                        <Final {...step_one_fields}
+                                {...step_two_fields}
+                                {...step_three_fields}
+                                {...step_four_fields}
+                                {...step_five_fields}
+                                {...step_six_fields}
+                                {...step_seven_fields}
+                                {...step_eight_fields}
+                        handelNextBtn={this.handelNextBtn} handelBackBtn={this.handelBackBtn} submittedValues={this.getStepFinalValues} />
+                   
+                );
+            }
        else { return (
             <div>
                 {this.state.confirm ?
