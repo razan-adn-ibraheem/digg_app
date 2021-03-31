@@ -14,9 +14,7 @@
   ) !important;
   transition: all 0.5s linear !important;
 
-  @media (max-width: 767px) {
-    padding: 15px 15px !important;
-  }
+ 
 }
 
 .dis_btn {
@@ -30,9 +28,7 @@
   border: 1px solid $lightGray;
   background-color: #fff;
   transition: all 0.5s linear;
-  @media (max-width: 767px) {
-    padding: 15px 98px;
-  }
+
 }
 /******************************************************************
 ||||||||| for first step radio button ( male, female ) |||||||||||||
