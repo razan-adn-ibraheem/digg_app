@@ -1,0 +1,152 @@
+{
+    "step2": {
+        "q1": {
+            "text":"Have you ever visited Dubai?",
+            "choices":
+            [{ "value":"No", "img":"no.png"},
+            { "value":"Yes", "img":"yes.png"}]
+        },
+        "q2": {
+            "text":" Do you have any friends or family in Dubai?",
+            "choices":
+            [{ "value":"No", "img":"no.png"},
+            { "value":"Yes", "img":"yes.png"}]
+        },
+        "q3": {
+            "text":" How long do you want to stay in stay in Dubai?",
+            "choices":
+            [{ "value":"Upto 3 months", "img":"calen.png"},
+            { "value":"3 to 6 months", "img":"calen.png"},
+            { "value":"6 to 12 months", "img":"calen.png"},
+            { "value":"+12 months", "img":"calen.png"},
+            { "value":"+3 yeasr", "img":"calen.png"}
+        ]
+        }
+    },
+    "step3": {
+        "q1": {
+            "text":"Why do you want to come to dubai?",
+            "choices":
+            [{ "value":"Lifestyle", "img":"happy.png"},
+            { "value":"Work opportunities", "img":"peo.png"},
+            { "value":"Education", "img":"edo.png"},
+            { "value":"Finance", "img":"money.png"},
+            { "value":"Tourism", "img":"tourism.png"},
+            { "value":"Family", "img":"family.png"},
+            { "value":"Business", "img":"business.png"},
+            { "value":"Security", "img":"secure.png"},
+            { "value":"The weather", "img":"sun.png"},
+            { "value":"Meeting new people", "img":"meet.png"},
+            { "value":"Culture", "img":"culture.png"}
+        ]
+        }
+    },
+    "step4": {
+        "q1": {
+            "text":"What industries would you prefer to work in?",
+            "choices":
+            [{ "value":"Construction", "img":"happy.png"},
+            { "value":"Hospitality", "img":"peo.png"},
+            { "value":"Real estate", "img":"edo.png"},
+            { "value":"Tourism", "img":"money.png"},
+            { "value":"Manufacturing", "img":"tourism.png"},
+            { "value":"Technology", "img":"family.png"},
+            { "value":"Media", "img":"business.png"},
+            { "value":"Farming", "img":"secure.png"},
+            { "value":"Fishing", "img":"sun.png"},
+            { "value":"Education", "img":"meet.png"},
+            { "value":"Public services", "img":"culture.png"},
+            { "value":"Administration", "img":"money.png"},
+            { "value":"Financial services", "img":"tourism.png"},
+            { "value":"Legal", "img":"family.png"},
+            { "value":"Health care", "img":"business.png"},
+            { "value":"Government ", "img":"secure.png"},
+            { "value":"Medical", "img":"sun.png"},
+            { "value":"Security", "img":"meet.png"},
+            { "value":"Logistics", "img":"culture.png"},
+            { "value":"Robotics", "img":"business.png"},
+            { "value":"Fashion ", "img":"secure.png"},
+            { "value":"Automotive", "img":"sun.png"},
+            { "value":"Transportation", "img":"meet.png"},
+            { "value":"Customer support", "img":"culture.png"}
+        ]
+        }
+    },
+    "step5": {
+        "q1": {
+            "text":"What are your interests?",
+            "choices":
+            [{ "value":"Outdoors", "img":"happy.png"},
+            { "value":"Fitness", "img":"peo.png"},
+            { "value":"Health", "img":"edo.png"},
+            { "value":"Travel", "img":"money.png"},
+            { "value":"Theme parks", "img":"tourism.png"},
+            { "value":"Cooking", "img":"family.png"},
+            { "value":"Sports", "img":"business.png"},
+            { "value":"Adventure", "img":"secure.png"},
+            { "value":"Music", "img":"sun.png"},
+            { "value":"Fashion", "img":"meet.png"},
+            { "value":"Technology ", "img":"culture.png"},
+            { "value":"Architecture", "img":"happy.png"},
+            { "value":"Writing", "img":"peo.png"},
+            { "value":"Gaming", "img":"edo.png"},
+            { "value":"Dining", "img":"money.png"},
+            { "value":"History", "img":"tourism.png"},
+            { "value":"Theatre", "img":"family.png"},
+            { "value":"Networking", "img":"business.png"},
+            { "value":"Art", "img":"secure.png"},
+            { "value":"Politics", "img":"sun.png"},
+            { "value":"Fishing", "img":"meet.png"},
+            { "value":"Meet people  ", "img":"culture.png"},
+            { "value":"Podcasts", "img":"edo.png"},
+            { "value":"Gambling ", "img":"money.png"},
+            { "value":"Self improvement", "img":"tourism.png"},
+            { "value":"Foreign languages", "img":"family.png"},
+            { "value":"Celebrities", "img":"business.png"},
+            { "value":"Dating", "img":"secure.png"},
+            { "value":"Social media", "img":"sun.png"},
+            { "value":"Photography", "img":"meet.png"}
+        ]
+        }
+    },
+    "step6": {
+        "q1": {
+            "text":"Do you have any financial savings?",
+            "choices":
+            [{ "value":"No savings", "img":"happy.png"},
+            { "value":"0 to 1000 aed", "img":"peo.png"},
+            { "value":"1000 to 5000 aed", "img":"edo.png"},
+            { "value":"5000 to 10,000 aed", "img":"money.png"},
+            { "value":"10,000 to 20,000 aed", "img":"tourism.png"},
+            { "value":"20,000 to 50,000 aed", "img":"family.png"},
+            { "value":"+50,000 aed", "img":"business.png"}
+        ]
+        }
+    },
+    "step7": {
+        "q1": {
+            "text":"What is your level of education?",
+            "choices":
+            [{ "value":"High school or less", "img":"happy.png"},
+            { "value":"Collage", "img":"peo.png"},
+            { "value":"Diploma", "img":"edo.png"},
+            { "value":"Batchelors", "img":"money.png"}
+        ]
+        }
+    },
+    "step8": {
+        "q1": {
+            "text":"How soon do you want to come to Dubai?",
+            "choices":
+            [{ "value":"Right now", "img":"happy.png"},
+            { "value":"0 to 3 months", "img":"peo.png"},
+            { "value":"3 to 6 months", "img":"edo.png"},
+            { "value":"6 to 12 months", "img":"money.png"},
+            { "value":"After 1 year", "img":"tourism.png"}
+        ]
+        }
+    }
+    
+    
+    
+}

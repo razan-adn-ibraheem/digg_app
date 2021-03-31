@@ -13,8 +13,30 @@
     $endGradient
   ) !important;
   transition: all 0.5s linear !important;
+
+  @media (max-width: 767px) {
+    padding: 15px 15px !important;
+  }
 }
 
+.dis_btn {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 15px 65px;
+  font-family: "sora-light";
+  font-size: 20px;
+  color: $darkGray;
+  border-radius: 30px;
+  border: 1px solid $lightGray;
+  background-color: #fff;
+  transition: all 0.5s linear;
+  @media (max-width: 767px) {
+    padding: 15px 98px;
+  }
+}
+/******************************************************************
+||||||||| for first step radio button ( male, female ) |||||||||||||
+*******************************************************************/
 .ant-radio {
   height: 30px !important;
   width: 30px !important;
@@ -47,4 +69,41 @@
     background-color: $gray !important;
     border-radius: 0 !important;
   }
+}
+
+.progress-bar {
+  background-color: $darkBlue !important;
+  background-image: linear-gradient(to right, $startGradient, $endGradient);
+}
+
+/*******************************************************
+||||||||| for question choice radio button |||||||||||||
+********************************************************/
+
+.ant-radio-button-wrapper {
+  height: 60px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 10px !important;
+  border-radius: 35px !important;
+  background-color: $gray !important;
+  color: $darkGray !important;
+  outline: none !important;
+  &:not(:first-child)::before {
+    display: none !important;
+  }
+  img {
+    margin: 10px;
+  }
+}
+
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  background-image: linear-gradient(
+    to right,
+    $startGradient,
+    $endGradient
+  ) !important;
+  color: $darkGray !important;
+  outline: none !important;
 }
