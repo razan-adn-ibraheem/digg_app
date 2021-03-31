@@ -1,3 +1,4 @@
+
 # Getting Started with Create React App
 
 
@@ -11,3 +12,4 @@
 #npm i node-sass
 
 #then write in terminal : npm start to run the project
+
